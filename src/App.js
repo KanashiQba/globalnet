@@ -35,12 +35,25 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="app">
       <header className="App-header">
-         <a>
-          CHUJ
-        </a>
+          <div className="App-logo">
+
+          </div>
+          <div className="App-buttons">
+
+          </div>
+          <div className="App-f">
+
+          </div>
+         
       </header>
+      <body className="App-body">
+
+      </body>
+      <footer className="App-footer">
+
+      </footer>
     </div>
   );
 }
