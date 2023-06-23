@@ -1,36 +1,110 @@
-.App {
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.App input{
+  margin-top: 20px;
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+p{
+  margin: 10px;
+  font-size: 18px;
+}
+.nav{
+  display: flex;  
+  align-items: flex-start;
+  flex-direction: column;
+  width: 40%;
+  height: 25%;
+
+}
+.input{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 50%;
+  width: 60%;
+
+}
+.login-container-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+
+.login-container {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.login-container h1 {
   text-align: center;
-  height: auto;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-.App-header {
-  background-color: #0055ff;
-  min-height: 8vh;
+.login-container form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-body {
-  background-color: #dfeaff;
-  min-height: 120vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.login-container form input[type="text"],
+.login-container form input[type="password"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
 }
-.App-footer {
-  background-color: #0055ff;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.login-container form input[type="text"]:focus-visible,
+.login-container form input[type="password"]:focus-visible {
+  outline: none;
+  border: 1px solid #ef387a;
+}
+
+.login-container form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #ef387a;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-container form button[type="submit"]:hover {
+  background-color: #333;
+  transition: 0.25s;
+}
+
+.login-container label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.login-container a {
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
 }
